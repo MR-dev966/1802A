@@ -1,4 +1,6 @@
 import request from '../util/request'
+import {getOpenId} from '../util/index'
+
 
 // 登陆接口
 export let userLogin = (code)=>{
@@ -17,6 +19,6 @@ export let getCouponList = ()=>{
 
 // 获取我领取的优惠券
 export let getMyCouponList = ()=>{
-    let openId = '';
+    let openId = getOpenId()
     return request.get(`/coupon/${openId}`)
 }
