@@ -7,8 +7,16 @@ export let getGoodsDetail = (goodsId)=>{
 }
 
 // 获取购物车列表
-export let getSeckillList = ()=>{
+export let getCartList = ()=>{
     let openId = getOpenId()
     return request.get(`/cart/${openId}`)
 }
 
+// 添加购物车
+export let addCart = (goodsCartAddVOList)=>{
+    let openId = getOpenId()
+    return request.post(`/cart`, {
+        goodsCartAddVOList,
+        openId
+    })
+}
