@@ -20,3 +20,8 @@ export let addCart = (goodsCartAddVOList)=>{
         openId
     })
 }
+
+// 提交购物车
+export let submitCart = (params)=>{
+    return request.post('m/recharge', params)
+}
