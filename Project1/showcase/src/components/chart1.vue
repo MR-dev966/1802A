@@ -37,6 +37,7 @@ export default defineComponent({
     });
 
     watch(props.size, ()=>{
+      console.log('watch chart1')
         chart.value.resize();
     })
 
