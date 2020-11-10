@@ -39,7 +39,7 @@ import {
 } from "@vue/composition-api";
 // 引入子组件
 import chart1 from './components/chart1'
-import chart2 from './components/chart2'
+// import chart2 from './components/chart2'
 import chart3 from './components/chart3'
 import chart4 from './components/chart4'
 import chart5 from './components/chart5'
@@ -54,7 +54,7 @@ export default defineComponent({
     GridLayout,
     GridItem,
     chart1,
-    chart2,
+    // chart2,
     chart3,
     chart4,
     chart5,
@@ -67,7 +67,7 @@ export default defineComponent({
     let layout = reactive([
       { x: 0, y: 0, w: 4, h: 10, i: "门店数据", component: 'chart1', size: ref(0) },
       { x: 4, y: 0, w: 4, h: 2, i: "智慧书店互动橱窗", size: ref(0) },
-      { x: 8, y: 0, w: 4, h: 10, i: "用户增长", component: 'chart2', size: ref(0) },
+      { x: 8, y: 0, w: 4, h: 10, i: "用户增长", component: 'chart1', size: ref(0) },
       { x: 0, y: 10, w: 4, h: 10, i: "书籍数据", component: 'chart3', size: ref(0) },
       { x: 4, y: 2, w: 4, h: 14, i: "全国门店分布", component: 'chart4', size: ref(0) },
       { x: 8, y: 10, w: 4, h: 10, i: "销售额数据", component: 'chart5', size: ref(0) },

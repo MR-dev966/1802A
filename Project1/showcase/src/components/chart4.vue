@@ -130,7 +130,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.echarts.chart,#people_stream {
+.echarts.chart{
   width: 100%;
   height: 100%;
 }
