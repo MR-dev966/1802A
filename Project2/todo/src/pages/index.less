@@ -1,0 +1,33 @@
+.title {
+  background: rgb(121, 242, 157);
+}
+
+html{
+  font-size: calc(100vw/750*100);
+}
+// 全局样式
+:global{
+  #root{
+    min-height: 100%;
+    height: 100%;
+  }
+}
+ul, li{
+  list-style: none;
+}
+// 局部样式
+:local{
+
+}
+
+html body{
+  background: #333;
+}
+.container{
+  display: flex;
+  background: #fff;
+  max-width: 500px;
+  min-height: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+}
